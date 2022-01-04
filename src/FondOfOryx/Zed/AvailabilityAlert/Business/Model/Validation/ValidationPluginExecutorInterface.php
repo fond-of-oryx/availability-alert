@@ -1,15 +1,15 @@
 <?php
 
-namespace FondOfOryx\Zed\AvailabilityAlert\Dependency\Plugin;
+namespace FondOfOryx\Zed\AvailabilityAlert\Business\Model\Validation;
 
 use Generated\Shared\Transfer\AvailabilityAlertSubscriptionTransfer;
 
-interface NotificationPluginInterface
+interface ValidationPluginExecutorInterface
 {
     /**
      * @param \Generated\Shared\Transfer\AvailabilityAlertSubscriptionTransfer $availabilityAlertSubscriptionTransfer
      *
      * @return void
      */
-    public function notify(AvailabilityAlertSubscriptionTransfer $availabilityAlertSubscriptionTransfer): void;
+    public function validate(AvailabilityAlertSubscriptionTransfer $availabilityAlertSubscriptionTransfer): void;
 }
